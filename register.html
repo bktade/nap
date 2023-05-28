@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Registration Page</title>
+ <style>
+  body {
+   background-color: gray;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+   margin: 0 auto;
+   width: 500px;
+   padding: 30px;
+   background-color: #fff;
+   border-radius: 10px;
+   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+   text-align: center;
+   color: #333;
+   margin-bottom: 30px;
+  }
+  input[type=text], input[type=email], input[type=password], input[type=tel] {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 10px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   background-color: #f8f8f8;
+   color: #555;
+   font-size: 16px;
+  }
+  select {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 10px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   background-color: #f8f8f8;
+   color: #555;
+   font-size: 16px;
+  }
+  label {
+   display: block;
+   margin-bottom: 8px;
+   color: #555;
+   font-size: 16px;
+   font-weight: bold;
+  }
+  button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 14px 20px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100%;
+   font-size: 18px;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
+  }
+  button:hover {
+   background-color: #3e8e41;
+  }
+  .row:after {
+   content: "";
+   display: table;
+   clear: both;
+  }
+  .col-25 {
+   float: left;
+   width: 25%;
+   margin-top: 6px;
+  }
+  .col-75 {
+   float: left;
+   width: 75%;
+   margin-top: 6px;
+  }
+  @media screen and (max-width: 600px) {
+   .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+   }
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+  <h2>Registration Form</h2>
+  <form action="/register" method="post">
+   <div class="row">
+    <div class="col-25">
+     <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+     <input type="text" placeholder="Enter First Name" name="fname" required>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="mname">Middle Name</label>
+    </div>
+    <div class="col-75">
+     <input type="text" placeholder="Enter Middle Name" name="mname">
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+     <input type="text" placeholder="Enter Last Name" name="lname" required>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="email">Email</label>
+    </div>
+    <div class="col-75">
+     <input type="email" placeholder="Enter Email" name="email" required>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="phone">Phone Number</label>
+    </div>
+    <div class="col-75">
+     <input type="tel" placeholder="Enter Phone Number" name="phone" required>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+     
+    <input type="text" placeholder="Enter country" name="country" required>
+
+     </select>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="city">City</label>
+    </div>
+    <div class="col-75">
+     <input type="text" placeholder="Enter City" name="city" required>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="worda">Worda</label>
+    </div>
+    <div class="col-75">
+     <input type="text" placeholder="Enter Worda" name="worda">
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="house">House Number</label>
+
+ </div>
+    <div class="col-75">
+     <input type="text" placeholder="Enter House Number" name="house" required>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="password">Password</label>
+    </div>
+    <div class="col-75">
+     <input type="password" placeholder="Enter Password" name="password" required>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-25">
+     <label for="confirm">Confirm Password</label>
+    </div>
+    <div class="col-75">
+     <input type="password" placeholder="Confirm Password" name="confirm" required>
+    </div>
+   </div>
+   <div class="row">
+    <button type="submit">Register</button>
+   </div>
+  </form>
+ </div>
+</body>
+</html>
